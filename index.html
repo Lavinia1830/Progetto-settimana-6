@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Netflix-assets/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--Ho scaricato bootstrap nella cartella locale ho ottimizzato la cartella così pesa meno.
+        Ho aggiunto il Sass-->
+    <title>Netflix</title>
+</head>
+<body class="bg-black">
+    <header class="mx-4 mb-2">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="Netflix-assets/assets/netflix_logo.png" alt="Logo Netflix"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link text-secondary" href="#">Home</a>
+                  <a class="nav-link text-white active" aria-current="page" href="#">TV Shows</a>
+                  <a class="nav-link text-secondary" href="#">Movies</a>
+                  <a class="nav-link text-secondary" href="#">Recently Added</a>
+                  <a class="nav-link text-secondary" href="#">My List</a>
+                </div>
+                <div class="ms-auto pe-3">
+                    <a href="#"><i class="bi bi-search text-white me-3"></i></a>
+                    <a href="#"><img class="kids me-3" src="Netflix-assets/assets/kids_icon.png" alt="Account Kids"></a>
+                    <a href="#"><i class="bi bi-bell-fill text-white me-3"></i></a>
+                    <a href="profilo.html"><img class="avatar" src="Netflix-assets/assets/avatar.png" alt="Foto Profilo"></a>
+                    <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-caret-down-fill text-white"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mx-5">
+        <div class="d-flex justify-content-start mb-4">
+            <h1 class="text-white">TV Shows</h1>
+            <div>
+                <a class="nav-link dropdown-toggle text-white border border-secondary generi px-2 py-1 ms-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Genres
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Animation</a></li>
+                    <li><a class="dropdown-item" href="#">Films for children and families</a></li>
+                    <li><a class="dropdown-item" href="#">Classics</a></li>
+                    <li><a class="dropdown-item" href="#">Comedies</a></li>
+                    <li><a class="dropdown-item" href="#">Documentaries</a></li>
+                    <li><a class="dropdown-item" href="#">Dramatic</a></li>
+                </ul>
+                
+            </div>
+            <div class="ms-auto">
+                <a href="#" class="border border-secondary text-secondary p-2"><i class="bi bi-list"></i></a>
+                <a href="#" class="border border-secondary text-secondary p-2 "><i class="bi bi-grid-fill"></i></a>
+            </div>
+        </div>
+        <div>
+            <div class="mb-5">
+                <h2 class="text-white">Trending Now</h2>
+                <div class="wrapper">
+                    <section id="section1">
+                        <a href="#section2">‹</a>
+                            <div class="item">
+                                <img class="pb-2" src="Netflix-assets/assets/media/media0.webp" alt="Serie TV Sherlock">
+                            </div>
+                            <div class="item">
+                                <img class="pb-2" src="Netflix-assets/assets/media/media1.jpg" alt="Film American Factory">
+                            </div>
+                            <div class="item">
+                                <img class="pb-2" src="Netflix-assets/assets/media/media2.webp" alt="Serie TV The Good Place">
+                            </div>
+                            <div class="item">
+                                <img class="pb-2" src="Netflix-assets/assets/media/media3.webp" alt="Serie TV Genius od the Moder World">
+                            </div>
+                            <div class="item">
+                                <img class="pb-2" src="Netflix-assets/assets/media/media4.jpg" alt="Film Cuba and the Cameraman">
+                            </div>
+                            
+                        <a href="#section2">›</a>
+                    </section>    
+                    <section id="section2">
+                        <a href="#section1">‹</a>
+                            <div class="item">
+                                <img class="pb-2" src="Netflix-assets/assets/media/media5.webp" alt="Film The China Hustle">
+                            </div>
+                            <div class="item">
+                                <img class="pb-2" src="Netflix-assets/assets/media/media6.jpg" alt="Film The social dilemma">
+                            </div>
+                            <div class="item">
+                                <img class="pb-2" src="Netflix-assets/assets/media/media7.webp" alt="Film AROG">
+                            </div>
+                            <div class="item">
+                                <img class="pb-2" src="Netflix-assets/assets/media/media8.webp" alt="Film Yahşi Bati">
+                            </div>
+                            <div class="item">
+                                <img class="pb-2" src="Netflix-assets/assets/media/media9.jpg" alt="Serie TV Connectd">
+                            </div>
+                        <a href="#section1">›</a>
+                    </section> 
+                </div>
+            </div>
+            <div class="mb-5">
+                <h2 class="text-white">Watch It Again</h2>
+                <div class="wrapper">
+                    <section id="section3">
+                        <a href="#section4">‹</a>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media11.jpg" alt="Film Operation Varsity Blues: The College Admissions Scandal">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media12.jpg" alt="Serie TV Tribes of Europa">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media13.jpg" alt="Serie TV Narcos">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media14.webp" alt="Serie TV Breaking Bad">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media15.jpg" alt="Serie TV Explained">
+                        </div>
+                        <a href="#section4">›</a>
+                    </section>
+                    <section id="section4">
+                        <a href="#section3">‹</a>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media16.webp" alt="Serie TV Rick and Morty">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media17.jpg" alt="Film The white helmets">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media18.jpg" alt="Serie TV Spycraft">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media19.webp" alt="Serie TV Better Call Saul">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media20.jpg" alt="Serie TV Inside Bill's Brain">
+                        </div>
+                        <a href="#section3">›</a>
+                    </section>
+                </div>
+            </div>
+            <div class="mb-5">
+                <h2 class="text-white">New Releases</h2>
+                <div class="wrapper">
+                    <section id="section5">
+                        <a href="#section6">‹</a>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media22.webp" alt="Serie TV How i met your mother">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media23.webp" alt="Film Dream Big engineering our world">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media24.jpg" alt="Serie TV Our Planet">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media25.webp" alt="Serie TV Modern Family">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media26.webp" alt="Serie TV Leyla and Mecnun">
+                        </div>
+                        <a href="#section6">›</a>
+                    </section>
+                    <section id="section6">
+                        <a href="#section5">‹</a>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media27.jpg" alt="Serie TV History 101">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media28.jpg" alt="Serie TV Peaky Blinders">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media29.jpg" alt="Film My Octopus Teacher">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media30.jpg" alt="Serie TV Magic for Humans">
+                        </div>
+                        <div class="item">
+                            <img class="pb-2" src="Netflix-assets/assets/media/media31.webp" alt="Film The Most Unknown">
+                        </div>
+                        <a href="#section5">›</a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="social">
+            <a href="https://www.facebook.com/"><i class="bi bi-facebook text-secondary me-3"></i></a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram text-secondary me-3"></i></a>
+            <a href="https://twitter.com/"><i class="bi bi-twitter text-secondary me-3"></i></a>
+            <a href="https://www.youtube.com/"><i class="bi bi-youtube text-secondary me-3"></i></a>
+        </div>
+        <div class="navigation">
+            <li><a href="#">Audio and Subtitles</a></li>
+            <li><a href="#">Audio Description</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Gift Cards</a></li>
+        </div>
+        <div class="navigation">
+            <li><a href="#">Media center</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Terms of Use</a></li>
+        </div>
+        <div class="navigation">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Lagal Notices</a></li>
+            <li><a href="#">Cookie Preferences</a></li>
+            <li><a href="#">Corporate information</a></li>
+        </div>
+        <div class="navigation mb-4">
+            <li><a href="#">Contact Us</a></li>
+        </div>
+        
+        <a href="#" class="border border-secondary text-secondary p-2"> Service Code</a>
+        <p class="text-secondary mt-3">&copy; 1997-2019 Netflix, inc. {i-0d00fcda2fdf9c0de}</p>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
